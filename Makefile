@@ -6,7 +6,7 @@
 #    By: rabduras <rabduras@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/08/19 14:04:50 by rabduras          #+#    #+#              #
-#    Updated: 2019/09/29 19:36:17 by rabduras         ###   ########.fr        #
+#    Updated: 2019/09/29 19:49:02 by rabduras         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ ft_strstr.c ft_strsub.c ft_strtrim.c ft_tolower.c ft_toupper.c
 
 OBJS = $(SRCS:.c=.o)
 
-%.o: %.c $(OBJ)
+%.o: %.c
 	gcc -c -o $@ $< $(CFLAGS)
 
 $(NAME): $(OBJS)
