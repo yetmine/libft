@@ -6,12 +6,12 @@
 /*   By: rabduras <rabduras@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/16 21:32:24 by rabduras          #+#    #+#             */
-/*   Updated: 2019/09/29 12:26:24 by rabduras         ###   ########.fr       */
+/*   Updated: 2019/09/29 19:19:50 by rabduras         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_LIBFT_H
-# define FT_LIBFT_H
+#ifndef LIBFT_H
+# define LIBFT_H
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>
