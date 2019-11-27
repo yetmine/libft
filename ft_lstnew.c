@@ -6,7 +6,7 @@
 /*   By: rabduras <rabduras@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/23 11:17:25 by rabduras          #+#    #+#             */
-/*   Updated: 2019/09/23 16:30:41 by rabduras         ###   ########.fr       */
+/*   Updated: 2019/10/21 22:36:10 by rabduras         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ t_list	*ft_lstnew(void const *content, size_t content_size)
 		if (content == NULL)
 		{
 			list->content_size = 0;
+			list->content = NULL;
 			return (list);
 		}
 		else
