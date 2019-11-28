@@ -6,7 +6,7 @@
 /*   By: rabduras <rabduras@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/22 12:19:09 by rabduras          #+#    #+#             */
-/*   Updated: 2019/09/28 11:19:27 by rabduras         ###   ########.fr       */
+/*   Updated: 2019/11/28 15:01:33 by rabduras         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,7 @@
 
 static int	is_space(int c)
 {
-	if (c == '\t' || c == '\n' || c == ' ')
-		return (1);
-	return (0);
+	return (c == '\t' || c == '\n' || c == ' ');
 }
 
 char		*ft_strtrim(char const *s)

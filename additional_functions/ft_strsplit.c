@@ -6,7 +6,7 @@
 /*   By: rabduras <rabduras@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/22 15:21:36 by rabduras          #+#    #+#             */
-/*   Updated: 2019/09/30 10:01:08 by rabduras         ###   ########.fr       */
+/*   Updated: 2019/11/28 15:00:59 by rabduras         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,19 +50,19 @@ static char		*nextword(const char *s, char c, size_t *n)
 	size_t	i;
 	size_t	j;
 	size_t	count;
-	char	*output;
+	char	*res;
 
 	i = *n;
 	j = 0;
 	while (s[i] == c)
 		i++;
 	count = delim_strlen((s + i), c);
-	output = (char*)malloc(sizeof(char) * (count + 1));
+	res = (char*)malloc(sizeof(char) * (count + 1));
 	while (count--)
-		output[j++] = s[i++];
-	output[j] = '\0';
+		res[j++] = s[i++];
+	res[j] = '\0';
 	*n = i;
-	return (output);
+	return (res);
 }
 
 char			**ft_strsplit(char const *s, char c)
@@ -71,7 +71,7 @@ char			**ft_strsplit(char const *s, char c)
 	size_t	n;
 	int		i;
 	int		count;
-	char	**output;
+	char	**res;
 
 	i = 0;
 	n = 0;
@@ -79,13 +79,13 @@ char			**ft_strsplit(char const *s, char c)
 		return (NULL);
 	count = words_count(s, c);
 	cpy = (char *)s;
-	output = (char**)malloc(sizeof(char*) * (count + 1));
-	if (output != NULL)
+	res = (char**)malloc(sizeof(char*) * (count + 1));
+	if (res != NULL)
 	{
 		while (i < count)
-			output[i++] = nextword(cpy, c, &n);
-		output[i] = 0;
-		return (output);
+			res[i++] = nextword(cpy, c, &n);
+		res[i] = 0;
+		return (res);
 	}
 	return (NULL);
 }

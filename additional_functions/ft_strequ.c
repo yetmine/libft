@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_strequ.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rabduras <rabduras@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/18 10:42:29 by rabduras          #+#    #+#             */
-/*   Updated: 2019/09/18 10:43:25 by rabduras         ###   ########.fr       */
+/*   Created: 2019/09/21 15:14:07 by rabduras          #+#    #+#             */
+/*   Updated: 2019/11/28 14:59:01 by rabduras         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_isascii(int c)
+int		ft_strequ(char const *s1, char const *s2)
 {
-	if (c >= 0 && c <= 127)
-		return (1);
-	return (0);
+	if (!s1 || !s2)
+		return (0);
+	return (ft_strcmp(s1, s2) == 0);
 }

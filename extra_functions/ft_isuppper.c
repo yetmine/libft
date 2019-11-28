@@ -1,20 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_isuppper.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rabduras <rabduras@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/18 10:20:07 by rabduras          #+#    #+#             */
-/*   Updated: 2019/09/29 10:58:20 by rabduras         ###   ########.fr       */
+/*   Created: 2019/09/18 10:35:36 by rabduras          #+#    #+#             */
+/*   Updated: 2019/11/28 14:54:51 by rabduras         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(int c)
+int		ft_isuppper(int c)
 {
-	if (ft_isuppper(c) || ft_islower(c))
-		return (1);
-	return (0);
+	return (c >= 'A' && c <= 'Z');
 }
