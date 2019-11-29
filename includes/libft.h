@@ -6,12 +6,13 @@
 /*   By: rabduras <rabduras@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/16 21:32:24 by rabduras          #+#    #+#             */
-/*   Updated: 2019/11/28 15:39:30 by rabduras         ###   ########.fr       */
+/*   Updated: 2019/11/28 16:14:58 by rabduras         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+# include "get_next_line.h"
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>

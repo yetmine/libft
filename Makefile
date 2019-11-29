@@ -6,7 +6,7 @@
 #    By: rabduras <rabduras@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/08/19 14:04:50 by rabduras          #+#    #+#              #
-#    Updated: 2019/11/28 15:56:57 by rabduras         ###   ########.fr        #
+#    Updated: 2019/11/28 16:20:32 by rabduras         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,7 @@ ADDITIONAL = ft_itoa ft_memalloc ft_memdel ft_putchar_fd ft_putchar ft_putendl_f
 	ft_striter ft_striteri ft_strjoin ft_strmap ft_strmapi ft_strnequ ft_strnew ft_strsplit \
 	ft_strsub ft_strtrim
 BONUS = ft_lstadd ft_lstdel ft_lstdelone ft_lstiter ft_lstmap ft_lstnew
-EXTRA = ft_islower ft_isspace ft_isuppper ft_strconcat ft_lstfold
+EXTRA = ft_islower ft_isspace ft_isuppper ft_strconcat ft_lstfold get_next_line
 
 LIBC_A = $(patsubst %, libc_functions/%, $(addsuffix .c, $(LIBC)))
 ADDITIONAL_A = $(patsubst %, additional_functions/%, $(addsuffix .c, $(ADDITIONAL)))
