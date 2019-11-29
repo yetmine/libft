@@ -2,7 +2,7 @@
 
 C language library that contains libc and other useful functions. Developed as a part of syllabus of 42 Silicon Valley.
 
-# Installation
+## Installation
 
 Clone the repository to a directory.
 ```
@@ -14,7 +14,7 @@ cd libft && make && make clean
 ```
 This will compile the libft library and you will get libft.a file that has all listed functions.
 
-# Libc functions descriptions
+## Libc functions descriptions
 
 | Function | Description |
 | -------- | ----------- |
@@ -47,7 +47,8 @@ This will compile the libft library and you will get libft.a file that has all l
 | ft_toupper | Lower case to upper case letter conversion |
 | ft_tolower | Upper case to lower case letter conversion |
 
-# Libc functions descriptions
+
+## Libc functions descriptions
 
 | Function | Description |
 | -------- | ----------- |
@@ -76,7 +77,8 @@ This will compile the libft library and you will get libft.a file that has all l
 | ft_putendl_fd | Outputs string to the file descriptor followed by newline |
 | ft_putnbr_fd | Outputs the integer n to the file descriptor |
 
-# Bonus functions descriptions
+
+## Bonus functions descriptions
 
 | Function | Description |
 | -------- | ----------- |
@@ -87,7 +89,8 @@ This will compile the libft library and you will get libft.a file that has all l
 | ft_lstiter | Iterates and applies function to every element of the list |
 | ft_lstmap | Iterates and applies function to every element of the list and stores the result of function to new list |
 
-# Extra functions descriptions
+
+## Extra functions descriptions
 
 | Function | Description |
 | -------- | ----------- |
@@ -98,6 +101,6 @@ This will compile the libft library and you will get libft.a file that has all l
 | ft_strconcat | Joins the array of strings with the given delimeter |
 | get_next_line | Reads one line from the given file descriptor |
 
-# Comments
+## P.S.
 **Everything is checked according to norm and moulinette**.  
 Special thanks to [@jgigault](https://github.com/jgigault) for creating a https://github.com/jgigault/42FileChecker to test this library.
